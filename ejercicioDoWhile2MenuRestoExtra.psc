@@ -1,5 +1,15 @@
 Algoritmo ejercicioDoWhile2MenuRestoExtra
 	
+	definir MENU_ENTRADAS Como Entero;
+	MENU_ENTRADAS = 1;
+	definir MENU_PLATO_PRINC Como Entero;
+	MENU_PLATO_PRINC = 2
+	Definir MENU_BEBIDAS Como Entero;
+	MENU_BEBIDAS = 3;
+	Definir MENU_POSTRES como entero;
+	MENU_POSTRES = 4;
+	Definir MENU_SALIR_CUENTA Como Entero
+	MENU_SALIR_CUENTA = 5;
 	definir ENTRADAS_VALOR Como Entero;
 	ENTRADAS_VALOR = 100;
 	Definir PLATO_PRINCIPAL_VALOR Como Entero;
@@ -77,7 +87,7 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 		
 		Segun menuOpcion Hacer
 			
-			1:
+			MENU_ENTRADAS:
 				Repetir
 					Limpiar Pantalla
 					Escribir MSJ_ENTRADAS;
@@ -103,10 +113,11 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 						4:
 						De Otro Modo:
 							Escribir MSJ_OP_INCORRECTA;
+							Esperar Tecla
 					Fin Segun
 				Hasta Que menuOpcion == 4;
 				
-			2:
+			MENU_PLATO_PRINC:
 				Repetir
 					Limpiar Pantalla
 					Escribir MSJ_PLATOS_PRINC;
@@ -132,10 +143,11 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 						4:
 						De Otro Modo:
 							Escribir MSJ_OP_INCORRECTA;
+							Esperar Tecla
 					Fin Segun
 				Hasta Que menuOpcion == 4;
 				
-			3:
+			MENU_BEBIDAS:
 				Repetir
 					Limpiar Pantalla
 					Escribir MSJ_BEBIDAS;
@@ -161,10 +173,11 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 						4:
 						De Otro Modo:
 							Escribir MSJ_OP_INCORRECTA;
+							Esperar Tecla
 					Fin Segun
 				Hasta Que menuOpcion == 4;
 				
-			4:
+			MENU_POSTRES:
 				Repetir
 					Limpiar Pantalla
 					Escribir MSJ_POSTRES;
@@ -190,13 +203,15 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 						4:
 						De Otro Modo:
 							Escribir MSJ_OP_INCORRECTA;
+							Esperar Tecla
 					Fin Segun
 				Hasta Que menuOpcion == 4;
 				
-			5:
+			MENU_SALIR_CUENTA:
 				Escribir MSJ_CUENTA_TOTAL cuentaTotal;
 			De Otro Modo:
 				Escribir MSJ_OP_INCORRECTA;
+				Esperar Tecla
 		Fin Segun
 	Hasta Que menuOpcion == 5
 	

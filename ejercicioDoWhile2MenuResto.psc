@@ -1,5 +1,15 @@
 Algoritmo ejercicioDoWhile2MenuRestoExtra
 	
+	definir MENU_ENTRADAS Como Entero;
+	MENU_ENTRADAS = 1;
+	definir MENU_PLATO_PRINC Como Entero;
+	MENU_PLATO_PRINC = 2
+	Definir MENU_BEBIDAS Como Entero;
+	MENU_BEBIDAS = 3;
+	Definir MENU_POSTRES como entero;
+	MENU_POSTRES = 4;
+	Definir MENU_SALIR_CUENTA Como Entero
+	MENU_SALIR_CUENTA = 5;
 	definir MSJ_MENU como Texto;
 	MSJ_MENU = "Menu Resto";
 	Definir MSJ_ENTRADAS como Texto;
@@ -58,28 +68,27 @@ Algoritmo ejercicioDoWhile2MenuRestoExtra
 		
 		Segun menuOpcion Hacer
 			
-			1:
+			MENU_ENTRADAS:
 				Escribir MSJ_ENTRADAS;
 				Escribir MSJ_ENTRADA_1;
 				Escribir MSJ_ENTRADA_2;
 				Escribir MSJ_ENTRADA_3;
-			2:
-				
+			MENU_PLATO_PRINC:
 				Escribir MSJ_PLATOS_PRINC;
 				Escribir MSJ_PLATO_PRINCIPAL_1;
 				Escribir MSJ_PLATO_PRINCIPAL_2;
 				Escribir MSJ_PLATO_PRINCIPAL_3;
-			3:
+			MENU_BEBIDAS:
 				Escribir MSJ_BEBIDAS;
 				Escribir MSJ_BEBIDA_1;
 				Escribir MSJ_BEBIDA_2;
 				Escribir MSJ_BEBIDA_3;
-			4:
+			MENU_POSTRES:
 				Escribir MSJ_POSTRES;
 				Escribir MSJ_POSTRE_1;
 				Escribir MSJ_POSTRE_2;
 				Escribir MSJ_POSTRE_3;				
-			5:
+			MENU_SALIR_CUENTA:
 				Escribir MSJ_CUENTA_TOTAL cuentaTotal;
 			De Otro Modo:
 				Escribir MSJ_OP_INCORRECTA;
